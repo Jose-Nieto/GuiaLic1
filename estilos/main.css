@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+list-style: none;
+
+
+}
+a{
+    text-decoration: none;
+    color: gray;
+    padding: 5px;
+    margin:4px;
+}
+.nav{
+    border: 2px solid #eaeaea;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 19px;
+}
+.ul{
+    text-align: right;
+  width: 700px;
+  margin-left: 500px;
+
+}
+span{
+    color: rgba(133, 167, 40, 0.836);
+}
+.menu{
+    display: inline-block;
+    margin: 35px;
+  width: 30px;
+}
+a:hover{
+    color: #09a12ad5;
+    border: 1px solid #000;
+    border-radius: 5px;
+   
+}
+.sublista{
+    display: block;
+    margin-top: 30px;
+    text-align: center;
+}
+.submenu{
+    position: absolute;
+    display: none; 
+    background-color: white;
+margin-left: 0px;
+margin-top: 2px;
+padding: 14px;
+
+}
+
+li a:hover + ul, .submenu:hover {
+  
+    display: block;
+}
+.logo{
+    width: 220px;
+    margin-top: -10px;
+    margin-left: 150px;
+    position: absolute;
+}
+video{
+    position: relative;
+ 
+    display: flex;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    z-index: -1;
+    visibility: visible;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    }
+
+    .perfil{
+        position: absolute;
+        width: 200px;
+        margin-top: -550px;
+        margin-left: 200px;
+    }
+    .frase{
+        border: 1px solid #fff;
+        width: 700px;
+        text-align: justify;
+        margin-left: 500px;
+        margin-top: -550px;
+        padding: 30px;
+        border-radius: 15px;
+        position: absolute;
+        font-size: 18px;
+        font-family: 'Slabo 27px', serif;
+        background-color: white;
+    }
+    h1{
+        font-family: 'Merienda One', cursive;
+        text-align: center;
+        margin-top: 50px;
+        font-size: 40px;
+        
+
+    }
