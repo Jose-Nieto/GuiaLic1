@@ -46,7 +46,7 @@ a:hover{
     display: none; 
     background-color: white;
 margin-left: 0px;
-margin-top: 2px;
+margin-top: 5px;
 padding: 14px;
 
 }
@@ -99,7 +99,55 @@ video{
         font-family: 'Merienda One', cursive;
         text-align: center;
         margin-top: 50px;
+        margin-left: 450px;
+        width: 430px;
         font-size: 40px;
-        
+        border-bottom: 1px solid   #09a12ad5; 
+    
+    }
 
+    .Uno{
+        width: 300px;
+      text-align: justify;
+      font-family: 'Slabo 27px', serif;
+      font-size: 21px;
+      position:absolute ;
+      margin-left: 150px;
+      margin-top: 50px;
+      background-color: #fff6f6f8;
+      padding: 40px;
+      border-radius: 30px;
+     
+    }
+  .Dos{
+    width: 300px;
+    text-align: justify;
+    font-family: 'Slabo 27px', serif;
+    font-size: 21px;
+    position:absolute ;
+    margin-left: 800px;
+margin-top: 50px;  
+background-color: #fff6f6f8;
+border-radius: 30px;
+padding: 40px;
+}
+
+    i{
+  margin-left: 130px;
+  font-size: 60px;
+  margin-bottom: 20px;
+    }
+    footer{
+        font-family: 'Nunito Sans', sans-serif;
+        position: absolute;
+        text-align: center;
+        margin-top:40%;
+        width: 1287px;
+        background-color: #fff6f6f8;
+        padding: 30px;
+        font-size: 16px;
+     
+    }
+    footer:hover{
+        border: 1px solid   #09a12ad5;
     }
