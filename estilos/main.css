@@ -5,6 +5,9 @@ list-style: none;
 
 
 }
+.acordeon{
+    display: none;
+}
 a{
     text-decoration: none;
     color: gray;
@@ -48,9 +51,9 @@ a:hover{
     position: absolute;
     display: none; 
     background-color: white;
-margin-left: 0px;
-margin-top: 5px;
-padding: 14px;
+
+padding-bottom: 10px;
+
 
 }
 
@@ -146,19 +149,68 @@ padding: 40px;
         text-align: center;
         margin-top:40%;
         width: 1287px;
-        background-color: #fff6f6f8;
+     
         padding: 30px;
         font-size: 16px;
      
     }
-    footer:hover{
-        border: 1px solid   #09a12ad5;
-    }
+    
 .desplegable{
     text-align: right;
     font-size: 30px;
     display: none;
 }
+.acordeon__contenido>a{
+    margin-left: 40px;
+   }
+   
+/**/
+.acordeon{
+	width: 200px;
+	margin-left: 100px;
+    margin-top: 100px;
+    display: none;
+}
+.radio{
+	display: none;
+}
+
+.acordeon__titulo {
+	display: block;
+	padding: 15px;
+text-align: center;
+	color: gray;
+	font-size: 20px;
+	cursor: pointer;
+	border-bottom: 1px solid #fff;
+}
+.acordeon__titulo:hover {
+
+	color: #09a12ad5;
+}
+
+.acordeon__contenido {
+	height: 0;
+	overflow: hidden;
+display: block;
+
+	transition: all 0.5s;
+
+width: 200px;
+}
+.acordeon__item > .radio{
+display: none;
+}
+.acordeon__contenido>a{
+ margin-left: 40px;
+ 
+}
+.acordeon input:checked ~ .acordeon__contenido {
+	height: auto;
+    margin: 15px 0;
+    display: block;
+}
+/**/
 @media  (min-width: 1600px) {
 
     .logo{
@@ -208,7 +260,7 @@ margin-left: 600px;
   
     
 }
-@media(min-width:1400px){
+@media(min-width:1400px) and(max-width:1599px){
     
     footer{
         width: 1333px;
@@ -217,18 +269,19 @@ margin-left: 600px;
         margin-left: 200px;
     }
     .Dos{
-        margin-left: 860px;
+        margin-left: 1060px;
  
     }
     h1{
-        margin-left: 550px;
+        margin-left: 850px;
     }
+
 }
 
-@media(min-width:1280px){
+@media(min-width:1200px) and (max-width: 1300px){
     
     footer{
-        width: 1220px;
+        width: 1225px;
     }
     .Uno{
         margin-left: 150px;
@@ -249,42 +302,249 @@ margin-left: 600px;
       margin-left: 425px;
       margin-top: -500px;
      }
+     .ul{
+         margin-left: 300px;
+     }
+    }
 
+@media(min-width:1300px) and (max-width:1399px){
+    .ul{ margin-left: 490px;
+ 
+ }
+ .logo{
+     margin-left: 100px;
+ }
+ .perfil{
+     margin-top: -500px;
+     margin-left: 250px;
+ }
+ .frase{
+     
+     margin-top: -500px;
+     margin-left: 500px;
+     width: 700px;
+ }
+ .Uno{
+     width: 270px;
+     margin-left: 220px;
+ }
+ .Dos{
+     width: 270px;
+     margin-left: 800px;
+ 
+ }
+ footer{
+     width: 1200px;
+     margin-left: 70px;
+     margin-top: 600px;
+ }
+ h1{
+     margin-left: 470px;
+ }
+ 
+ }
+ @media (min-width:975px) and (max-width:1024px){
 .ul{
-    margin-left: 400px;
-}
-}
-@media(min-width:1024px){
-   .ul{ margin-left: 180px;
-
-}
-.logo{
-    margin-left: 100px;
+    margin-left: 170px;
 }
 .perfil{
-    margin-top: -400px;
-    margin-left: 150px;
+    margin-top: -380px;
+    margin-left: 110px;
+
 }
-.frase{
-    
-    margin-top: -400px;
-    margin-left: 400px;
-    width: 500px;
+.frase{   
+     margin-top: -380px;
+    margin-left: 350px;
+    width: 560px;
 }
 .Uno{
-    width: 270px;
+    margin-left: 50px;
 }
 .Dos{
-    width: 270px;
     margin-left: 600px;
-
-}
-footer{
-    width: 960px;
-    margin-top: 600px;
 }
 h1{
-    margin-left: 370px;
+margin-left: 320px;
+}
+footer{
+    margin-left: 100px;
+width: 800px;
+    margin-top: 600px
+}
 }
 
+/*-------*/
+ @media(min-width:1024px) and (max-width:1199px){
+
+   .ul{ margin-left: 190px;
+ 
+ }
+ .logo{
+     margin-left: 100px;
+ }
+ .perfil{
+     margin-top: -450px;
+     margin-left: 140px;
+ }
+ .frase{
+     
+     margin-top: -450px;
+     margin-left: 420px;
+     width: 500px;
+ }
+ .Uno{
+     width: 270px;
+     margin-left: 120px;
+ }
+ .Dos{
+     width: 270px;
+     margin-left: 600px;
+ 
+ }
+ footer{
+     width: 870px;
+margin-top: 600px;
+margin-left: 70px;
+ }
+ h1{
+     margin-left: 380px;
+ }
+ 
+ }
+@media(min-width:890px) and (max-width:975px){
+.ul{
+    margin-left: 100px;
 }
+.logo{
+    margin-left: 80px;
+    width: 215px;
+}
+.frase{
+    margin-top: -380px;
+    margin-left:350px;
+    width: 500px;
+    font-size: 20px;
+}
+.perfil{
+    margin-top: -350px;
+    margin-left: 70px;
+}
+h1{
+    margin-left: 310px;
+}
+.Uno{
+    margin-left: 30px;
+}
+.Dos{
+    margin-left: 510px;
+}
+footer{
+    margin-top: 500px;
+    width: 700px;
+    margin-left: 100px;
+}
+}
+@media(min-width:768px) and (max-width:889px){
+    .logo{
+        display: none;
+    }
+.ul{
+    margin-left: -140px;
+    position: relative;
+}
+.perfil{
+    display: none;
+}
+.frase{
+    margin-left: 115px;
+    margin-top: -350px;
+    width: 500px;
+    z-index: -1;
+
+}
+h1{
+    margin-left: 200px;
+}
+
+.sublista >a{
+    margin-top:12px;
+}
+.Uno{
+    margin-left: 210px;
+}
+.Dos{
+    margin-top: 500px;
+    margin-left: 210px;
+}
+footer{
+    margin-top: 1000px;
+
+    width: 700px;
+}
+}
+
+@media(min-width:375px) and (max-width:767px){
+    .logo{
+      width:110px;
+      margin-left: 150px;
+      margin-top: -12px;
+    }
+   
+.ul{
+
+display: none;
+}
+
+
+
+
+.acordeon{
+    display: block;
+    margin-top:45px;
+}
+
+/**/
+.perfil{
+    display: none;
+
+}
+video{
+    display: none;
+}
+.seccion1{
+    background-color: #000;
+margin-top: 200px;
+margin-left: 20px;
+display: block;
+}
+.frase{
+    display: block;
+    width: 200px;
+    margin-top: -140px;
+    margin-left: 40px;
+}
+.profesional{
+    display :block;
+}
+h1{
+    margin-top: 530px;
+    margin-left: 80px;
+    font-size: 40PX;
+    width: 200PX;
+}
+.Uno{
+    width: 260px;
+    margin-left: 20px;
+}
+.Dos{
+    width: 260px;
+    margin-top: 560px;
+    margin-left: 20px;
+}
+footer{
+    display:block;
+    margin-top: 1060px;
+    margin-left: -0px;
+    width: 315px;
+}
+} 
