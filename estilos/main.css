@@ -15,8 +15,10 @@ a{
     border: 2px solid #eaeaea;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 19px;
+
 }
 .ul{
+ 
     text-align: right;
   width: 700px;
   margin-left: 500px;
@@ -36,6 +38,7 @@ a:hover{
     border-radius: 5px;
    
 }
+
 .sublista{
     display: block;
     margin-top: 30px;
@@ -151,3 +154,137 @@ padding: 40px;
     footer:hover{
         border: 1px solid   #09a12ad5;
     }
+.desplegable{
+    text-align: right;
+    font-size: 30px;
+    display: none;
+}
+@media  (min-width: 1600px) {
+
+    .logo{
+        width: 200px;
+        margin-top: -5px;
+        margin-left: 170px;
+    }
+    .ul{
+
+      width: 700px;
+      margin-left: 500px;
+    
+    }
+    .nav{
+        width: 1595px;
+    }
+    video{
+        width: 1595px;
+        }
+    
+        .perfil{
+              margin-top: -620px;
+            margin-left: 340px;
+        }
+        .frase{
+       
+            margin-left: 625px;
+            margin-top: -620px;
+           }
+           footer{
+            margin-top:40%;
+            width: 1525px;
+            padding: 30px;
+        }
+        .Uno{
+          margin-left: 278px;
+          margin-top: 120px;
+        }
+      .Dos{
+        margin-left: 1000px;
+        margin-top: 120px;
+    }
+    h1{
+margin-left: 600px;
+
+    }
+  
+    
+}
+@media(min-width:1400px){
+    
+    footer{
+        width: 1333px;
+    }
+    .Uno{
+        margin-left: 200px;
+    }
+    .Dos{
+        margin-left: 860px;
+ 
+    }
+    h1{
+        margin-left: 550px;
+    }
+}
+
+@media(min-width:1280px){
+    
+    footer{
+        width: 1220px;
+    }
+    .Uno{
+        margin-left: 150px;
+    }
+    .Dos{
+        margin-left: 760px;
+ 
+    }
+    h1{
+        margin-left: 450px;
+    }
+    .perfil{
+        margin-top: -500px;
+      margin-left: 200px;
+  }
+  .frase{
+ 
+      margin-left: 425px;
+      margin-top: -500px;
+     }
+
+.ul{
+    margin-left: 400px;
+}
+}
+@media(min-width:1024px){
+   .ul{ margin-left: 180px;
+
+}
+.logo{
+    margin-left: 100px;
+}
+.perfil{
+    margin-top: -400px;
+    margin-left: 150px;
+}
+.frase{
+    
+    margin-top: -400px;
+    margin-left: 400px;
+    width: 500px;
+}
+.Uno{
+    width: 270px;
+}
+.Dos{
+    width: 270px;
+    margin-left: 600px;
+
+}
+footer{
+    width: 960px;
+    margin-top: 600px;
+}
+h1{
+    margin-left: 370px;
+}
+
+}
