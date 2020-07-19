@@ -6,8 +6,12 @@
 * desde la fecha de nacimiento hasta la *
 * fecha actual del calendario. *
 * * * * * * * * * * * * * * * * * * * * * * * * * * */
-var mes = prompt("Ingrese el mes: ", "");
-var year = prompt("Ingrese el año: ", "");
+while(true){
+
+var year =  parseInt( prompt("Ingrese el año: ", ""));
+if(!isNaN(year) && year!=null && year !=""){
+    var mes = prompt("Ingrese el mes: ", "");
+
 var diasdelmes;
 var bisiesto = false;
 if(year%4 == 0 && (year%100 != 0 || year%400 == 0)){
@@ -16,32 +20,44 @@ bisiesto = true;
 switch(mes){
 case "Enero":
 case "enero":
+case" ENERO":
 case "Marzo":
 case "marzo":
+    case " MARZO":
 case "Mayo":
 case "mayo":
+    case " MAYO":
 case "Julio":
 case "julio":
+    case " JULIO":
 case "Agosto":
 case "agosto":
+    case " AGOSTO":
 case "Octubre":
 case "octubre":
-    case "Diciembre":
+    case " OCTUBRE":
+case "Diciembre":
 case "diciembre":
+    case " DICIEMBRE":
 diasdelmes = 31;
 break;
 case "Abril":
 case "abril":
+    case " ABRIL":
 case "Junio":
 case "junio":
+    case " JUNIO":
 case "Septiembre":
 case "septiembre":
+    case " SEPTIEMBRE":
 case "Noviembre":
 case "noviembre":
+    case " NOVIEMBRE":
 diasdelmes = 30;
 break;
 case "Febrero":
 case "febrero":
+    case " FEBRERO":
 if(!bisiesto)
 diasdelmes = 28;
 else
@@ -64,3 +80,10 @@ var msg = "El año " + year + " no es bisiesto.<br />El mes de " + mes + " tiene
 //que ha vivido la persona
 var dias = document.getElementById('info');
 dias.innerHTML = '<h3>' + msg + '</h3>';
+break;
+}
+else{
+    alert(" DIGITE UN AÑO VALIDO");
+    continue;
+}
+}

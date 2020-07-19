@@ -6,35 +6,44 @@
 //Función que trabaja como manejador de evento
 //al producirse el evento load (carga de la página)
 function init() {
+    while(true){
+
+    
     //Ingresar los datos de los números a operar
-    var op1 = prompt('Introduzca el primer numero:','');
-    var op2 = prompt('Introduzca el segundo numero:','');
-    //Elemento div donde se mostrará el menú de las operaciones
-    var operaciones = document.getElementById('operaciones');
-    //Elemento div donde se mostrarán los resultados
-    var resultado = document.getElementById('resultado');
-    //Creando el contenido de la página
-    var contenido = "<header>\n";
-    contenido += "\t<h1></h1>\n";
-    contenido += "</header>\n";
-    contenido += "<nav class='menu'>\n";
-    contenido += "<ul>\n";
-    contenido += "\t<li>\n";
-    contenido += "\t\t<a href=\"javascript:void(0)\"><span>Sumar</span></a>\n";
-    contenido += "</li>\n";
-    contenido += "\t<li>\n";
-    contenido += "\t\t<a href=\"javascript:void(0)\"><span>Restar</span></a>\n";
-    contenido += "</li>\n";
-    contenido += "\t<li>\n";
-    contenido += "\t\t <a href=\"javascript:void(0)\"><span>Multiplicar</span></a>\n";
-    contenido += "</li>\n";
-    contenido += "\t<li>\n";
-    contenido += "\t\t<a href=\"javascript:void(0)\"><span>Dividir</span></a>\n";
-    contenido += "</li>\n";
-    contenido += "\t<li>\n";
-    contenido += "\t\t<a href=\"javascript:void(0)\"><span>Residuo</span></a>\n";
-    contenido += "</li>\n";
-    contenido += "</ul>\n";
+    var op1 = parseFloat( prompt('Introduzca el primer numero:',''));
+    if(!isNaN(op1) && op1 != null && op1 !=""){
+
+        var op2 = parseFloat(prompt('Introduzca el segundo numero:',''));
+        if(!isNaN(op2) && op2!=null && op2!=""){
+
+
+        
+   //Elemento div donde se mostrará el menú de las operaciones
+   var operaciones = document.getElementById('operaciones');
+   //Elemento div donde se mostrarán los resultados
+   var resultado = document.getElementById('resultado');
+   //Creando el contenido de la página
+   var contenido = "<header>\n";
+   contenido += "\t<h1></h1>\n";
+   contenido += "</header>\n";
+   contenido += "<nav class='menu'>\n";
+   contenido += "<ul>\n";
+   contenido += "\t<li>\n";
+   contenido += "\t\t<a href=\"javascript:void(0)\"><span>Sumar</span></a>\n";
+   contenido += "</li>\n";
+   contenido += "\t<li>\n";
+   contenido += "\t\t<a href=\"javascript:void(0)\"><span>Restar</span></a>\n";
+   contenido += "</li>\n";
+   contenido += "\t<li>\n";
+   contenido += "\t\t <a href=\"javascript:void(0)\"><span>Multiplicar</span></a>\n";
+   contenido += "</li>\n";
+   contenido += "\t<li>\n";
+   contenido += "\t\t<a href=\"javascript:void(0)\"><span>Dividir</span></a>\n";
+   contenido += "</li>\n";
+   contenido += "\t<li>\n";
+   contenido += "\t\t<a href=\"javascript:void(0)\"><span>Residuo</span></a>\n";
+   contenido += "</li>\n";
+   contenido += "</ul>\n";
 contenido += "</nav>\n";
 //Colocar el contenido dentro del elemento div
 operaciones.innerHTML = contenido;
@@ -47,8 +56,7 @@ switch(i){
 case 0:
 //Función sumar
 opciones[i].onclick = function(){
-resultado.innerHTML = "<p class=\"letterpress\">" + op1
-+ " + " + op2 +" = " + (parseFloat(op1) + parseFloat(op2)) + "</p>\n";
+resultado.innerHTML = "<p class=\"letterpress\">" + op1 + " + " + op2 +" = " + (parseFloat(op1) + parseFloat(op2)) + "</p>\n";
 }
 break;
 case 1:
@@ -82,6 +90,19 @@ resultado.innerHTML = "<p class=\"letterpress\">" + op1 + " % " + op2 + " = " + 
 }
 break;
 }
+}
+break;
+    }
+    else{
+        alert(" Debe ingresar datos validos");
+        continue;
+    }
+break;
+}
+   else{
+       alert(" Debe ingresar datos validos");
+       continue;
+   }
 }
 }
 window.onload=init;
