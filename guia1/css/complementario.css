@@ -95,7 +95,7 @@ h1{
     margin-top: -630px;
 }
 .uno{
-    background-image:  url(/guia1/recursos/seg.jpg) ;
+    background-image:  url(guia1/recursos/seg.jpg) ;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -113,7 +113,7 @@ h1{
     background-color: white;
 }
 .dos{
-    background-image: url(/guia1/recursos/ter.jpg);
+    background-image: url(guia1/recursos/ter.jpg);
     background-repeat: no-repeat;
     margin-top: -10px;
     background-position: center;
